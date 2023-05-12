@@ -1,0 +1,16 @@
+{% extends 'auth/paper.html' %}
+<!-- Se podria extender mas usando '/' para idicar que se extiende de otra carpeta ex: auth/paper.htm-->
+
+{% block header %}
+    <h1>{% block title %}Register{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        <label for="username">Username</label>
+        <input name="username" id="username" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        <input type="submit" value="Register Now">        
+    </form>
+{% endblock %}
